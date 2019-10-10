@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: Helvetica , Arial , sans-serif;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .noliststyle {
@@ -18,10 +19,33 @@
   left: 0;
   top: 0;
   height: calc(100vh - 80px);
-  width: 20%;
+  width: 250px;
   color: white;
 }
 
+#logo {
+  width: 60%;
+  margin: 20px 20%;
+}
+
+#nav_left ul {
+  margin-left: 20px;
+}
+
+#nav_left ul li {
+  margin: 10px 0;
+}
+
+#nav_left ul li a{
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 15px;
+}
 
 /* main */
 #main {
@@ -30,10 +54,9 @@
   top: 0;
   right: 0;
   height: calc(100vh - 80px);
-  width: 80%;
+  width: calc(100% - 250px);
   overflow: auto;
   padding: 40px;
-  font-weight: bold;
 }
 
   #main ul {
@@ -131,7 +154,7 @@
     visibility: visible;
   }
 
-  #main ul li:not(#selected) a:hover, .name:hover {
+  #main ul li:not(.selected) a:hover, .name:hover , #nav_left ul li:not(.selected) a:hover {
     color: white;
   }
 
