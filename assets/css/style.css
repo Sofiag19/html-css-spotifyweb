@@ -1,0 +1,98 @@
+* {
+  font-family: Helvetica , Arial , sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.noliststyle {
+  list-style-type: none;
+}
+
+/* @font-face {
+            font-family: 'spotify-circular';
+            src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff') format('woff'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.ttf') format('truetype');
+} */
+
+
+/* nav_left */
+#nav_left {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: calc(100vh - 80px);
+  width: 20%;
+  color: white;
+}
+
+/* main */
+#main {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100vh - 80px);
+  width: 80%;
+  overflow: auto;
+  padding: 40px;
+}
+
+  #main ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  a {
+    color: yellow;/* DEBUG:  */
+  }
+
+    .header_block_unit {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .playlists_block_unit {
+      display: flex;
+    }
+
+    .img_preview {
+      position: relative;
+    }
+
+    .artist img{
+      border-radius: 50%;
+    }
+
+    .img_preview i {
+      visibility: hidden;
+      position: absolute;
+  }
+
+/* main-hover */
+  .artist:hover .img_preview,.playlist:hover .img_preview {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .artist:hover i,.playlist:hover i {
+    visibility: visible;
+  }
+
+
+
+/* player */
+#player {
+  background-color: darkgrey;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
