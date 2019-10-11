@@ -502,11 +502,6 @@ margin-top: 10px;
     width: 25%;
   }
 
-  /* #tools_player div:first-of-type {
-    flex-direction: column;
-    justify-content: space-around;
-  } */
-
   #id_song {
     flex-direction: column;
   }
@@ -533,5 +528,42 @@ margin-top: 10px;
     width: calc(88% / 2);
     margin-right: 6%;
     margin-bottom: 20px;
+  }
+
+  #nav_left {
+    visibility: hidden;
+  }
+
+  #little_nav_left {
+    visibility: visible;
+    height: calc(100% - 150px);
+    z-index: 10;
+  }
+
+  #main {
+    width: calc(100% - 80px);
+    height: calc(100% - 150px);
+  }
+
+  #player {
+    height: 150px;
+  }
+
+  #listening_player {
+    padding: 20px 0;
+    width: 25%;
+  }
+
+  #id_song {
+    flex-direction: column;
+  }
+
+  #tools_player {
+    flex-direction: column;
+  }
+
+  #other_tools {
+    margin-bottom: 20px;
+    justify-content: center;
   }
 }
