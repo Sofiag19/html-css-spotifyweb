@@ -21,7 +21,9 @@
   height: calc(100vh - 80px);
   width: 230px;
   color: rgb(200, 200, 200);
-  padding: 20px;
+  padding: 20px 0 10px 20px;;
+  margin-bottom: 80px;
+  overflow: auto;
 }
 
 #logo {
@@ -44,7 +46,7 @@
   margin-right: 15px;
 }
 
-#nav_left_bottom h4 {
+#nav_left_middle h4 {
   font-weight: 100;
   font-size: 12px;
   margin: 20px 0 10px;
@@ -53,12 +55,8 @@
 .create {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
-
-/* .create i {
-  font-size: 35px;
-  margin-right: 10px;
-} */
 
 .plus {
   width: 30px;
@@ -78,8 +76,44 @@
   color: rgba(10,32,41,1);
 }
 
+.list_playlists {
+  height: 180px;
+  overflow: auto;
+}
 
+#nav_left_middle ul li {
+  line-height: 30px;
+}
 
+#nav_left_bottom {
+margin-top: 10px;
+}
+
+#nav_left_bottom > a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#nav_left_bottom i {
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+#nav_left_bottom hr {
+  width: 85%;
+  color: rgb(200, 200, 200);
+  margin: 0;
+}
+
+#nav_left_bottom > div {
+  margin-top: 10px;
+}
+
+#nav_left_bottom img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
 
 
 /* main */
@@ -189,7 +223,7 @@
     visibility: visible;
   }
 
-  #main ul li:not(.selected) a:hover, .name:hover , #nav_left ul li:not(.selected) a:hover, .create:hover > span {
+  #main ul li:not(.selected) a:hover, .name:hover , #nav_left ul li:not(.selected) a:hover, .create:hover > span, #nav_left_bottom > a:hover {
     color: white;
   }
 
