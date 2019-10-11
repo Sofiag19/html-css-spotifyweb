@@ -16,6 +16,11 @@
           border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
+.selected a{
+  color: white;
+}
+
+
 /* nav_left */
 #nav_left {
   background: rgba(10,32,41,1);
@@ -113,10 +118,16 @@ margin-top: 10px;
     margin-top: 10px;
   }
 
+  #nav_left_bottom > div a {
+    display: flex;
+    align-items: center;
+  }
+
     #nav_left_bottom img {
       border-radius: 50%;
       width: 25px;
       height: 25px;
+      margin-right: 5px;
     }
 
 
@@ -148,8 +159,23 @@ margin-top: 10px;
     text-decoration: none;
   }
 
-  .selected a{
-    color: white;
+  #main ul li {
+    margin: 10px;
+  }
+
+  #main ul li:first-of-type {
+    position: relative;
+  }
+
+  #main ul li:first-of-type span {
+    background-color: #1db954;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
   }
 
   .block_unit {
@@ -181,8 +207,8 @@ margin-top: 10px;
 
         .img_preview {
           position: relative;
-          width: 140px;
-          height: 140px;
+          width: 130px;
+          height: 130px;
           margin-bottom: 10px;
         }
 
@@ -263,9 +289,13 @@ margin-top: 10px;
   margin-right: 10%;
 }
 
+  #listening_player div {
+    margin-right: 2%;
+  }
+
     #listening_player img {
-      width: 45px;
-      height: 45px;
+      width: 60px;
+      height: 60px;
     }
 
     #listening_player div:nth-of-type(2) > a {
@@ -289,12 +319,16 @@ margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+#nav_player_up a {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #nav_player_up i {
   font-size: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
   display: inline-block;
 }
 
@@ -313,7 +347,11 @@ margin-top: 10px;
   border-bottom: 3px solid white;
   border-radius: 5px;
   width: 30%;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 2%;
+}
+
+#nav_player_down span {
+  font-weight: 100;
 }
 
 #nav_player_down i {
@@ -322,7 +360,7 @@ margin-top: 10px;
 
 #nav_player_down a:nth-of-type(2) {
   width: 50%;
-  margin: 10px 10px 10px 0;
+  margin: 10px 2% 10px 0;
   border-bottom: 3px solid rgba(159, 159, 159, 0.7);
 }
 
@@ -331,12 +369,11 @@ margin-top: 10px;
   justify-content: flex-end;
   align-items: center;
   width: 28%;
-  margin-right: 2%;
   color: rgba(159, 159, 159, 0.7);
 }
 
 #tools_player a {
-  margin-left: 10px;
+  margin-left: 5%;
 }
 
 #tools_player a:nth-of-type(4) {
