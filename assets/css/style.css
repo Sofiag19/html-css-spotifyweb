@@ -136,7 +136,7 @@ margin-top: 10px;
   left: 0;
   top: 0;
   height: calc(100vh - 80px);
-  width: 100px;
+  width: 80px;
   color: rgb(200, 200, 200);
   padding: 20px 10px;
   margin-bottom: 80px;
@@ -145,12 +145,24 @@ margin-top: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 #little_nav_left img {
   width: 50%;
   margin: 0 auto;
+  transition: filter 0;
 }
+
+ #little_nav_left i {
+   font-size: 30px;
+ }
+
+ #little_nav_left hr {
+   width: 80%;
+ }
+
+
 
 /* main */
 #main {
@@ -273,17 +285,27 @@ margin-top: 10px;
     visibility: visible;
   }
 
-  #main ul li:not(.selected) a:hover, .name:hover , #nav_left ul li:not(.selected) a:hover, .create:hover > span, #nav_left_bottom > a:hover, #listening_player div:nth-of-type(2) a:hover, #listening_player div:last-of-type i:hover, #nav_player_up a i:hover,
-  #tools_player a > i:hover {
+  #main ul li:not(.selected) a:hover, .name:hover ,
+  #nav_left_top ul li:not(.selected) a:hover,
+  .create:hover > span, #nav_left_middle ul li a:hover,
+  #nav_left_bottom > a:hover,
+  #listening_player div:nth-of-type(2) a:hover, #listening_player div:last-of-type i:hover,
+  #nav_player_up a i:hover,
+  #tools_player a > i:hover,
+  #little_nav_left a:hover  {
     color: white;
   }
 
-  .create:hover .plus {
+  .create:hover .plus, #little_nav_left .plus:hover {
     background-color: white;
   }
 
   .border_hidden:hover {
     border-bottom: 1px solid white;
+  }
+
+  #little_nav_left a:hover img{
+    filter: brightness(200%);
   }
 
 
@@ -443,8 +465,13 @@ margin-top: 10px;
   }
 
   #main {
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
   }
+
+  .plus {
+    margin-right: 0;
+  }
+
 }
 
 @media all and (max-width: 400px) {
