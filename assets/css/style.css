@@ -12,6 +12,10 @@
   list-style-type: none;
 }
 
+.border_hidden {
+          border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
 /* nav_left */
 #nav_left {
   background: rgba(10,32,41,1);
@@ -161,7 +165,6 @@ margin-top: 10px;
       .header_block_unit h2 {
         color: white;
         font-size: 35px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0);
       }
 
     .playlists_block_unit {
@@ -223,7 +226,8 @@ margin-top: 10px;
     visibility: visible;
   }
 
-  #main ul li:not(.selected) a:hover, .name:hover , #nav_left ul li:not(.selected) a:hover, .create:hover > span, #nav_left_bottom > a:hover {
+  #main ul li:not(.selected) a:hover, .name:hover , #nav_left ul li:not(.selected) a:hover, .create:hover > span, #nav_left_bottom > a:hover, #listening_player div:nth-of-type(2) a:hover, #listening_player div:last-of-type i:hover, #nav_player_up a i:hover,
+  #tools_player a > i:hover {
     color: white;
   }
 
@@ -231,18 +235,122 @@ margin-top: 10px;
     background-color: white;
   }
 
-  .header_block_unit h2:hover {
-    border-bottom: 1px solid ;
+  .border_hidden:hover {
+    border-bottom: 1px solid white;
   }
 
 
 /* player */
 #player {
-  background-color: darkgrey;
+  background-color: rgb(40, 40, 40);
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 80px;
   z-index: 20;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listening_player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin-right: 10%;
+}
+
+    #listening_player img {
+      width: 45px;
+      height: 45px;
+    }
+
+    #listening_player div:nth-of-type(2) > a {
+      display: inline-block;
+    }
+
+    #listening_player .fas.fa-heart {
+      color: rgb(200, 200, 200);
+    }
+
+    #listening_player .fas.fa-heart:active {
+      color: green;  /* DEBUG: potrei pensare di fare con la checkbox */
+    }
+
+#nav_player {
+  width: 40%;
+  color: rgba(159, 159, 159, 0.7);
+}
+
+#nav_player_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_player_up i {
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+#nav_player_up a:nth-of-type(3) i{
+  font-size: 30px;
+}
+
+#nav_player_down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav_player_down a {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  border-radius: 5px;
+  width: 30%;
+  margin: 10px 0 10px 10px;
+}
+
+#nav_player_down i {
+  color: white;
+}
+
+#nav_player_down a:nth-of-type(2) {
+  width: 50%;
+  margin: 10px 10px 10px 0;
+  border-bottom: 3px solid rgba(159, 159, 159, 0.7);
+}
+
+#tools_player {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 28%;
+  margin-right: 2%;
+  color: rgba(159, 159, 159, 0.7);
+}
+
+#tools_player a {
+  margin-left: 10px;
+}
+
+#tools_player a:nth-of-type(4) {
+  display: inline-block;
+  border-bottom: 3px solid white;
+  width: 18%;
+}
+
+#tools_player > i {
+  color: white;
+}
+
+#tools_player a:last-of-type{
+  border-bottom: 3px solid rgba(159, 159, 159, 0.7);
+  width: 2%;
+  margin: 0;
 }
