@@ -269,6 +269,7 @@ margin-top: 10px;
             font-size: 60px;
             font-weight: 100;
             z-index: 5;
+            transition: font-size 0;
           }
 
   /* shadow */
@@ -312,6 +313,10 @@ margin-top: 10px;
 
   #little_nav_left a:hover img, .icon:hover{
     filter: brightness(200%);
+  }
+
+  .img_preview i:hover {
+    font-size: 65px;
   }
 
 /* player */
