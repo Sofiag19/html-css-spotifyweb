@@ -107,6 +107,8 @@ main::-webkit-scrollbar-thumb {
   padding: 20px 0 10px 20px;;
   margin-bottom: 80px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #logo {
