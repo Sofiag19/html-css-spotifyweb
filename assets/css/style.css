@@ -109,6 +109,7 @@ main::-webkit-scrollbar-thumb {
   overflow: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 #logo {
@@ -163,7 +164,7 @@ main::-webkit-scrollbar-thumb {
     }
 
   .list_playlists {
-    height: 180px;
+    max-height: 170px;
     overflow: auto;
   }
 
@@ -580,6 +581,11 @@ margin-top: 10px;
   #main {
     width: calc(100% - 80px);
     height: calc(100% - 150px);
+    padding: 0 25px;
+  }
+
+  #main ul{
+    margin: 20px auto;
   }
 
   #player {
