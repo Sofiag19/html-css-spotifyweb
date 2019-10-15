@@ -483,6 +483,7 @@ margin-top: 10px;
   border-radius: 5px;
   width: 0;
   margin: 10px 0 10px 2%;
+  animation: grow 10s linear;
 }
 
 #nav_player_down span {
@@ -499,7 +500,7 @@ margin-top: 10px;
   border-bottom: 3px solid rgba(159, 159, 159, 0.7);
 }
 
-#nav_player_down a{
+.fa-play-circle:active #nav_player_down a{
   animation: grow 10s linear;
 }
 
@@ -517,7 +518,7 @@ margin-top: 10px;
   }
 }
 
-#nav_player_down a:nth-of-type(2) {
+.fa-play-circle:active #nav_player_down a:nth-of-type(2) {
   animation: decrease 10s linear;
 }
 
