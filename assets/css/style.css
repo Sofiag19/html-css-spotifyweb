@@ -8,6 +8,10 @@
   font-weight: bold;
 }
 
+body {
+  overflow: hidden;
+}
+
 .noliststyle {
   list-style-type: none;
 }
@@ -17,6 +21,10 @@
 }
 
 .selected a{
+  color: white;
+}
+
+.hoverwhite:hover {
   color: white;
 }
 
@@ -370,17 +378,6 @@ margin-top: 10px;
 
   .artist:hover .shadow,.playlist:hover .shadow, .artist:hover i,.playlist:hover i {
     visibility: visible;
-  }
-
-  #main ul li:not(.selected) a:hover, .name:hover ,
-  #nav_left_top ul li:not(.selected) a:hover,
-  .create:hover > span, #nav_left_middle ul li a:hover,
-  #nav_left_bottom > a:hover,
-  #listening_player div:nth-of-type(2) a:hover, #listening_player div:last-of-type i:hover,
-  #nav_player_up a i:hover,
-  #tools_player a > i:hover,
-  #little_nav_left a:hover  {
-    color: white;
   }
 
   .create:hover .plus, #little_nav_left .plus:hover {
