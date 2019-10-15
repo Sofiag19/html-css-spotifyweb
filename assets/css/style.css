@@ -340,7 +340,7 @@ margin-top: 10px;
 
           .img_preview img {
             width: 100%;
-
+            box-shadow: 4px 4px 40px black
           }
 
           .artist img{
@@ -500,7 +500,7 @@ margin-top: 10px;
   border-bottom: 3px solid rgba(159, 159, 159, 0.7);
 }
 
-.fa-play-circle:active #nav_player_down a{
+#nav_player_down a{
   animation: grow 10s linear;
 }
 
@@ -518,7 +518,7 @@ margin-top: 10px;
   }
 }
 
-.fa-play-circle:active #nav_player_down a:nth-of-type(2) {
+#nav_player_down a:nth-of-type(2) {
   animation: decrease 10s linear;
 }
 
