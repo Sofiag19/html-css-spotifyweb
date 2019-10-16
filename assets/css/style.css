@@ -173,7 +173,7 @@ main::-webkit-scrollbar-thumb {
 
   .list_playlists {
     max-height: 170px;
-    overflow: auto;
+    overflow:auto;
   }
 
       .list_playlists ul li {
@@ -318,6 +318,7 @@ margin-top: 10px;
     .playlists_block_unit {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       align-content: flex-start;
       margin: 20px 0;
     }
@@ -328,7 +329,8 @@ margin-top: 10px;
 
       .artist , .playlist {
         text-align: center;
-        margin-right: 2%;
+        margin-right: 1%;
+        margin-left: 1%;
         width: calc(88% / 6);
       }
 
@@ -340,7 +342,7 @@ margin-top: 10px;
 
           .img_preview img {
             width: 100%;
-            box-shadow: 4px 4px 40px black
+            box-shadow: 3px 3px 30px black
           }
 
           .artist img{
@@ -501,7 +503,7 @@ margin-top: 10px;
 }
 
 #nav_player_down a{
-  animation: grow 10s linear;
+  animation: grow 15s linear;
 }
 
 @keyframes grow {
@@ -519,7 +521,7 @@ margin-top: 10px;
 }
 
 #nav_player_down a:nth-of-type(2) {
-  animation: decrease 10s linear;
+  animation: decrease 15s linear;
 }
 
 @keyframes decrease {
